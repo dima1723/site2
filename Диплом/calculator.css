@@ -1,0 +1,1131 @@
+.calc
+{
+    margin-top: 50px;   
+    margin-left: 50px;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.title {
+  font-size: 54px;
+  font-weight: 300;
+  margin-bottom: 54px;
+}
+.title small {
+  font-size: 16px;
+}
+
+.link {
+  display: block;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 54px;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-label, .checkbox-text, .checkbox-text--description {
+  transition: all 0.4s ease;
+}
+
+.checkbox-label {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  padding: 0px 60px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 16px 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 0 #1c63b8;
+}
+.checkbox-label:before {
+  content: "";
+  position: absolute;
+  top: 75%;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  background-color: #1c63b8;
+  background-image: url(http://lorenzodianni.io/codepen/icon/done--white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  border-radius: 50%;
+  transform: translate(0%, -50%);
+  transition: all 0.4s ease;
+}
+
+.checkbox-text--title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 90%;
+  white-space: nowrap;
+}
+.checkbox-text--title1 {
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: -30px;
+  font-size: 90%;
+}
+.checkbox-text--description {
+  font-size: 14px;
+  margin: 0px 20px;
+  width: 120px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 3px solid #1c63b8;
+}
+.checkbox-text--description .un {
+  display: none;
+}
+
+.checkbox-input:checked + .checkbox-label {
+  border-color: #1c63b8;
+  box-shadow: inset 0 -12px 0 0 #1c63b8;
+}
+.checkbox-input:checked + .checkbox-label:before {
+  top: 0;
+  opacity: 1;
+}
+.checkbox-input:checked + .checkbox-label .checkbox-text {
+  transform: translate(0, -8px);
+}
+.checkbox-input:checked + .checkbox-label .checkbox-text--description {
+  border-color: #d9d9d9;
+}
+.checkbox-input:checked + .checkbox-label .checkbox-text--description .un {
+  display: inline-block;
+}
+.marka
+{
+  margin-top: 3%; 
+  margin-left: 35%; 
+  white-space: nowrap;
+}
+.form-group1
+{
+  margin-top: -2.8%; 
+  margin-left: 55%; 
+  white-space: nowrap;
+}
+@font-face
+  {
+  font-family: Nfont;
+  src: url("PT_Sans-Web-Regular.ttf");
+  }
+    li::marker
+    {
+        color: #1c63b8;
+    }
+html{
+    font-family: Nfont;
+}
+.body_hide {
+    opacity: 1;
+    transition: .5s opacity ease-in-out;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body_visible {
+    opacity: 1;
+}
+.tabl
+{
+    width: 100%;
+    margin: 5% 18%;
+}
+#logs {
+    margin: -18px 1px;
+    font-size: 25px;
+    text-decoration: none;
+}
+#logs1 {
+    font-size: 25px;
+    text-decoration: none;
+    margin: -199px 180px;
+    line-height: 34px;
+}
+#logs2{
+    font-size: 25px;
+    text-decoration: none;
+    margin: -200px 180px;
+    line-height: 34px;
+}
+
+.logo {
+    width: 100px;
+    margin: -5px 20px;
+}
+.logo1 {
+    width: 100px;
+    margin: 115px 80px;
+}
+
+.a1 {
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    font-family: Nfont;
+}
+
+
+.FixNav {
+    z-index: 1000;
+    background-color: #1c63b8;
+    height: 65px;
+    margin: 0px 0px;
+    color: white;
+    width: 100%;
+}
+		ul.submenu {
+			display: none;
+			position: absolute;
+			width: 180px;
+			top: 145px;
+			left: 317px;
+            font-family: Nfont;
+            line-height: 30px;
+		}
+		ul.submenu > li {
+			display: block;
+		}
+		ul.submenu > li > a {
+			display: block;
+			padding: 0px;
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+            line-height: 20px;
+            padding-left: 5px;
+            padding-top: 5px;
+		}
+		ul.submenu > li > a:hover {
+			text-decoration: underline;
+            background-color:#1c63b8;
+		}
+		ul.menu > li:hover > ul.submenu {
+			display: block;
+            background-color: #1c63b8;
+            height: 180px;
+		}
+ul li::marker
+{
+    color: #1c63b8;
+    font-size: 1.5em;
+}
+.checkbox-label {
+  width: 280px;
+  margin: 16px;
+  height: 150px;
+}
+
+#follow {
+    margin: 0px;
+    width: 300px;
+    height: 40px;
+    z-index: 2;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    background-color: #1c63b8;
+    border-radius: 15px;
+    color: white;
+    }
+.header {
+    position: sticky;
+    top: 0px;
+    border: 1px;
+    width: 100%;
+    margin-top: left;
+    background-color: rgb(255, 255, 255);
+    height: 63px;
+    margin: -60px 0px;
+    color: black;
+    z-index: 1000;
+}
+
+.nav {
+    margin: 0px 0px;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 28px;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: 0.5s all;
+}
+
+.nav1 {
+    border: none;
+    white-space: nowrap;
+    border-radius: 3px;
+    padding: 6px 28px;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: 0.5s all;
+}
+
+body {
+    margin: 0;
+}
+h2 {
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+    margin: -90px auto;
+}
+
+a {
+    text-decoration: none;
+    transition: .5s linear;
+}
+
+i {
+    margin-right: 10px;
+}
+
+nav {
+    display: block;
+    width: 800px;
+    height: 100px;
+    /*НАВИГАЦИЯ*/
+    margin: 90px 80px;
+}
+
+.two ul {
+    overflow: hidden;
+    padding: 0;
+    margin: -80px;
+    cursor: default;
+    color: rgb(255, 255, 255);
+    height: 65px;
+}
+
+.two button {
+    display: block;
+    padding: 1em;
+    background: rgba(0, 0, 0, );
+    color: #ffffff;
+    border: none;
+    height: 50px;
+}
+
+.two li {
+    float: left;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.two a {
+    display: block;
+    padding: 1em;
+    background: rgba(255, 255, 255, );
+    color: #000000;
+}
+
+.two a:hover {
+    background: #e0e0e0;
+}
+
+.colortext {
+    color: rgb(0, 0, 0);
+}
+
+.usl {
+    margin: -200px 5px;
+}
+
+#cont {
+    background-color: #20252b;
+    width:1800px;
+    height: 600px;
+    margin: 0 -40px;
+    color: white;
+}
+#cont1 {
+    background-color: #20252b;
+    width:120%;
+    height: 565px;
+    margin: 0 -40px;
+    color: white;
+}
+.con {
+    color: rgb(216, 215, 215);
+}
+.con1 {
+    text-decoration: underline #1c63b8;
+    color: rgb(216, 215, 215);
+}
+.con2
+{
+    color: rgb(112, 112, 112);
+}
+.back_to_top {
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+    z-index: 9999;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #444;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+  }
+  .back_to_top-show {
+    display: block;
+  }
+  .KontHead
+    {
+        font-size: 25px; 
+        margin: -268px 70%; 
+        white-space: nowrap;
+    }
+.ContInfo
+    {
+        margin-left: 20%;
+    }
+    .line2
+    {
+        background-color: #1c63b8; 
+        width: 266px;
+        height: 3px; 
+        margin: 262px 70%; 
+        border: none;
+    }
+    .ANP{
+        margin: -224px 70%; 
+        white-space: nowrap; 
+        font-size: 130%;
+    }
+.info
+{
+    margin-left: 8%; 
+    margin-right: 8%; 
+    margin-bottom: 10%; 
+    margin-top: 10%; 
+    font-size: 150%;
+}
+.menu
+ {
+    margin-left: 9%;
+ }
+ .header2
+    {
+        margin-top: -15%;
+        font-size: 100%;
+    }
+ .line
+ {
+    background-color: #1c63b8; 
+    width: 70px; 
+    height: 3px; 
+    margin: 213px 28.9%; 
+    border: none;
+ }
+ .line1
+ {
+    background-color: #1c63b8; 
+    width: 70px; 
+    height: 3px; 
+    margin: 235px 745px; 
+    border: none;
+ }
+  article
+  {
+      background: #000000;
+  }
+   article img{
+    opacity: 0.5;
+  }
+  .logotip
+  {
+    margin-left: 4%;
+  }
+  .number
+      {
+        margin: 0% 58%; 
+        white-space: nowrap;
+        width: 100%
+      }
+.conty {
+	position: relative;
+	width: 100%;
+    max-width: 100%;
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url(images/umit-otomotiv-oto-yedek-parca.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;   
+    color: white; 
+    font-size: 130%;
+}
+.pochta a {
+	color: #32557f;
+	text-decoration: none;
+	background:  no-repeat 0 100%;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-size: 0% 2px;
+	transition: background-size .3s ease;
+  }
+  
+  p a:hover, a:focus {
+	background-size: 100% 2px;
+  }
+.endpaper
+{
+	width: 335px;
+}
+.cover
+{
+	width: 335px;
+	text-align: left;
+}
+.page-size
+{
+	width: 345px;
+	text-align: left;
+}
+.detali
+	{
+		margin-top: 5%; 
+		margin-left: 17%; 
+		white-space: nowrap; 
+		user-select: none;
+		text-align: left;
+		font-size: 85%;
+	}
+.sum
+{
+	width: 335px;
+	text-align: left;
+}
+
+@media (min-width: 1851px) and (max-width: 1920px)
+      {
+        .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -14%;
+    }
+    .line
+    {
+        margin: 198px 28.9%;
+    }
+    .form-group1
+    {
+        margin-top: -3%;
+    }
+    .header2
+    {
+        margin-top: 15%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: -12.5%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .selDet
+    {
+        margin: 103px 985px;
+    }
+    .tabl
+    {
+        width: 70%;
+    }
+    .ANP
+    {
+        margin: -215px 70%;
+    }
+      }
+
+  @media (min-width: 1801px) and (max-width: 1850px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -14%;
+    }
+    .line
+    {
+        margin: 193px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 15%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .tabl
+        {
+            width: 75%;
+        }
+        .selDet
+        {
+            margin: 96px 965px;
+        }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 0%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -225px 70%;
+    }
+  }
+  @media (min-width: 1751px) and (max-width: 1800px)
+  {
+     
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -15%;
+    }
+    .form-group1
+    {
+      margin-top: -3.4%;
+    }
+    .line
+    {
+        margin: 188px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 15%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .tabl
+        {
+            width: 75%;
+        }
+        .selDet
+        {
+            margin: 94px 940px;
+        }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 0.5%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -234px 70%;
+    }
+  }
+
+  @media (min-width: 1701px) and (max-width: 1750px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -15%;
+    }
+    .form-group1
+    {
+      margin-top: -3.4%;
+    }
+    .line
+    {
+        margin: 181px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 16%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .tabl
+        {
+            width: 75%;
+        }
+        .selDet
+        {
+            margin: 94px 912px;
+        }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 0%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -220px 70%;
+    }
+  }
+
+  @media (min-width:1651px) and (max-width: 1700px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -16%;
+    }
+    .form-group1
+    {
+      margin-top: -3.5%;
+    }
+    .line
+    {
+        margin: 181px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 16%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .tabl
+        {
+            width: 75%;
+        }
+        .selDet
+        {
+            margin: 89px 886px;
+        }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 0%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -220px 70%;
+    }
+  }
+
+  @media (min-width:1601px) and (max-width: 1650px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -16%;
+    }
+    .form-group1
+    {
+      margin-top: -3.5%;
+    }
+    .line
+    {
+        margin: 168px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 16%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .tabl
+        {
+            width: 70%;
+        }
+        .selDet
+        {
+            margin: 85px 822px;
+        }
+    .ContInfo
+    {
+       margin-left: -20%;
+       margin-top: 1%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -236px 70%;
+    }
+  }
+
+  @media (min-width: 1551px) and (max-width: 1600px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -17%;
+    }
+    .form-group1
+    {
+      margin-top: -3.5%;
+    }
+    .line
+    {
+        margin: 168px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 16%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .tabl
+        {
+            width: 70%;
+        }
+        .selDet
+        {
+            margin: 85px 795px;
+        }
+    .ContInfo
+    {
+       margin-left: -20%;
+       margin-top: 1%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -236px 70%;
+    }
+  }
+
+  @media (min-width: 1501px) and (max-width: 1550px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -18%;
+    }
+    .form-group1
+    {
+      margin-top: -3.6%;
+    }
+    .line
+    {
+        margin: 164px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 20%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .tabl
+        {
+            width: 70%;
+        }
+        .selDet
+        {
+            margin: 80px 770px;
+        }
+    .ContInfo
+    {
+       margin-left: -24%;
+       margin-top: -16.7%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -205px 70%;
+    }
+  }
+
+  @media (min-width: 1441px) and (max-width: 1500px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -18%;
+    }
+    .form-group1
+    {
+      margin-top: -4%;
+    }
+    .line
+    {
+        margin: 156px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 20%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .tabl
+        {
+            width: 70%;
+        }
+        .selDet
+        {
+            margin: 80px 740px;
+        }
+    .ContInfo
+    {
+       margin-left: -25%;
+       margin-top: -16.7%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -205px 70%;
+    }
+      }
+      @media (min-width: 1401px) and (max-width:1440px)
+      {
+        .logotip
+        {
+            margin-left: 12%;
+        }
+        .menu
+        {
+            margin-left: 29%;
+            margin-top: -19%;
+        }
+        .form-group1
+    {
+      margin-top: -4%;
+    }
+        .line
+        {
+            margin: 153px 28.9%;
+        }
+        .header2
+        {
+            margin-top: 20%;
+        }
+        .tabl
+        {
+            width: 70%;
+        }
+        .selDet
+        {
+            margin: 80px 720px;
+        }
+        .line2
+        {
+            margin: 279px 70%;
+        }
+        .ContInfo
+        {
+           margin-left: -25%;
+           margin-top: -16.8%;
+        }
+        .KontHead
+        {
+            margin: -279px 70%;
+        }
+        .ANP
+        {
+            margin: -219px 70%;
+        }
+      }
+  @media (min-width: 1367px) and (max-width: 1400px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -19%;
+    }
+    .selDet
+    {
+        margin: 75px 700px
+    }
+    .tabl
+    {
+        width: 70%;
+    }
+    .form-group1
+    {
+      margin-top: -4%;
+    }
+    .line
+    {
+        margin: 145px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 20%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -26%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -219px 70%;
+    }
+  }
+  @media (max-width: 1366px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -19%;
+    }
+    .form-group1
+    {
+      margin-top: -4.2%;
+    }
+    .tabl
+    {
+        width: 60%;
+    }
+    .endpaper
+    {
+        margin: 164px 626px;
+    }
+    .line
+    {
+        margin: 145px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 20%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -26%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -219px 70%;
+    }
+  }
+ 

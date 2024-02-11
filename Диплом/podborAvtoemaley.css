@@ -1,0 +1,783 @@
+@font-face
+  {
+  font-family: Nfont;
+  src: url("PT_Sans-Web-Regular.ttf");
+  }
+    li::marker
+    {
+        color: #1c63b8;
+    }
+html{
+    font-family: Nfont;
+}
+.body_hide {
+    opacity: 1;
+    transition: .5s opacity ease-in-out;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body_visible {
+    opacity: 1;
+}
+
+#logs {
+    margin: -18px 1px;
+    font-size: 25px;
+    text-decoration: none;
+}
+#logs1 {
+    font-size: 25px;
+    text-decoration: none;
+    margin: -199px 180px;
+    line-height: 34px;
+}
+#logs2{
+    font-size: 25px;
+    text-decoration: none;
+    margin: -200px 180px;
+    line-height: 34px;
+}
+
+.logo {
+    width: 100px;
+    margin: -5px 20px;
+}
+.logo1 {
+    width: 100px;
+    margin: 115px 80px;
+}
+
+.a1 {
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    font-family: Nfont;
+}
+
+
+.FixNav {
+    z-index: 1000;
+    background-color: #1c63b8;
+    height: 65px;
+    margin: 0px 0px;
+    color: white;
+    width: 100%;
+}
+		ul.submenu {
+			display: none;
+			position: absolute;
+			width: 180px;
+			top: 145px;
+			left: 317px;
+            font-family: Nfont;
+            line-height: 30px;
+		}
+		ul.submenu > li {
+			display: block;
+		}
+		ul.submenu > li > a {
+			display: block;
+			padding: 0px;
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+            line-height: 20px;
+            padding-left: 5px;
+            padding-top: 5px;
+		}
+		ul.submenu > li > a:hover {
+			text-decoration: underline;
+            background-color:#1c63b8;
+		}
+		ul.menu > li:hover > ul.submenu {
+			display: block;
+            background-color: #1c63b8;
+            height: 180px;
+		}
+ul li::marker
+{
+    color: #1c63b8;
+    font-size: 1.5em;
+}
+
+#follow {
+    margin: 0px;
+    width: 300px;
+    height: 40px;
+    z-index: 2;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    background-color: #1c63b8;
+    border-radius: 15px;
+    color: white;
+    }
+.header {
+    position: sticky;
+    top: 0px;
+    border: 1px;
+    width: 100%;
+    margin-top: left;
+    background-color: rgb(255, 255, 255);
+    height: 63px;
+    margin: -60px 0px;
+    color: black;
+    z-index: 1000;
+}
+
+.nav {
+    margin: 0px 0px;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 28px;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: 0.5s all;
+}
+
+.nav1 {
+    border: none;
+    white-space: nowrap;
+    border-radius: 3px;
+    padding: 6px 28px;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: 0.5s all;
+}
+
+body {
+    margin: 0;
+}
+h2 {
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+    margin: -90px auto;
+}
+
+a {
+    text-decoration: none;
+    transition: .5s linear;
+}
+
+i {
+    margin-right: 10px;
+}
+
+nav {
+    display: block;
+    width: 800px;
+    height: 100px;
+    /*НАВИГАЦИЯ*/
+    margin: 90px 80px;
+}
+
+.two ul {
+    overflow: hidden;
+    padding: 0;
+    margin: -80px;
+    cursor: default;
+    color: rgb(255, 255, 255);
+    height: 65px;
+}
+
+.two button {
+    display: block;
+    padding: 1em;
+    background: rgba(0, 0, 0, );
+    color: #ffffff;
+    border: none;
+    height: 50px;
+}
+
+.two li {
+    float: left;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.two a {
+    display: block;
+    padding: 1em;
+    background: rgba(255, 255, 255, );
+    color: #000000;
+}
+
+.two a:hover {
+    background: #e0e0e0;
+}
+
+.colortext {
+    color: rgb(0, 0, 0);
+}
+
+.usl {
+    margin: -200px 5px;
+}
+
+#cont {
+    background-color: #20252b;
+    width:1800px;
+    height: 600px;
+    margin: 0 -40px;
+    color: white;
+}
+#cont1 {
+    background-color: #20252b;
+    width:120%;
+    height: 565px;
+    margin: 0 -40px;
+    color: white;
+}
+.con {
+    color: rgb(216, 215, 215);
+}
+.con1 {
+    text-decoration: underline #1c63b8;
+    color: rgb(216, 215, 215);
+}
+.con2
+{
+    color: rgb(112, 112, 112);
+}
+.back_to_top {
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+    z-index: 9999;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #444;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+  }
+  .back_to_top-show {
+    display: block;
+  }
+  .KontHead
+    {
+        font-size: 25px; 
+        margin: -268px 70%; 
+        white-space: nowrap;
+    }
+.ContInfo
+    {
+        margin-left: 20%;
+    }
+    .line2
+    {
+        background-color: #1c63b8; 
+        width: 266px;
+        height: 3px; 
+        margin: 262px 70%; 
+        border: none;
+    }
+    .ANP{
+        margin: -224px 70%; 
+        white-space: nowrap; 
+        font-size: 130%;
+    }
+.info
+{
+    margin-left: 8%; 
+    margin-right: 8%; 
+    margin-bottom: 10%; 
+    margin-top: 10%; 
+    font-size: 150%;
+}
+.menu
+ {
+    margin-left: 9%;
+ }
+ .header2
+    {
+        margin-top: -15%;
+        font-size: 100%;
+    }
+ .line
+ {
+    background-color: #1c63b8; 
+    width: 70px; 
+    height: 3px; 
+    margin: 213px 28.9%; 
+    border: none;
+ }
+ .line1
+ {
+    background-color: #1c63b8; 
+    width: 70px; 
+    height: 3px; 
+    margin: 235px 745px; 
+    border: none;
+ }
+  article
+  {
+      background: #000000;
+  }
+   article img{
+    opacity: 0.5;
+  }
+  .logotip
+  {
+    margin-left: 4%;
+  }
+  .number
+      {
+        margin: 0% 58%; 
+        white-space: nowrap;
+        width: 100%
+      }
+      @media (min-width: 1851px) and (max-width: 1920px)
+      {
+        .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: 0%;
+    }
+    .line
+    {
+        margin: 203px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 15%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: -12.5%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -215px 70%;
+    }
+      }
+
+  @media (min-width: 1801px) and (max-width: 1850px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -10%;
+    }
+    .line
+    {
+        margin: 193px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 15%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 0%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -225px 70%;
+    }
+  }
+  @media (min-width: 1751px) and (max-width: 1800px)
+  {
+     
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -10%;
+    }
+    .line
+    {
+        margin: 188px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 15%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 0.5%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -234px 70%;
+    }
+  }
+
+  @media (min-width: 1701px) and (max-width: 1750px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -10%;
+    }
+    .line
+    {
+        margin: 181px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 16%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 0%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -220px 70%;
+    }
+  }
+
+  @media (min-width:1651px) and (max-width: 1700px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -10%;
+    }
+    .line
+    {
+        margin: 181px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 16%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 0%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -220px 70%;
+    }
+  }
+
+  @media (min-width:1601px) and (max-width: 1650px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -11%;
+    }
+    .line
+    {
+        margin: 168px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 16%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 1%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -236px 70%;
+    }
+  }
+
+  @media (min-width: 1551px) and (max-width: 1600px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -11%;
+    }
+    .line
+    {
+        margin: 168px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 16%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: 1%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -236px 70%;
+    }
+  }
+
+  @media (min-width: 1501px) and (max-width: 1550px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -13%;
+    }
+    .line
+    {
+        margin: 164px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 20%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: -16.7%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -205px 70%;
+    }
+  }
+
+  @media (min-width: 1441px) and (max-width: 1500px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -13%;
+    }
+    .line
+    {
+        margin: 156px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 20%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+       margin-top: -16.7%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -205px 70%;
+    }
+      }
+      @media (min-width: 1401px) and (max-width:1440px)
+      {
+        .logotip
+        {
+            margin-left: 12%;
+        }
+        .menu
+        {
+            margin-left: 29%;
+            margin-top: -13%;
+        }
+        .line
+        {
+            margin: 153px 28.9%;
+        }
+        .header2
+        {
+            margin-top: 20%;
+        }
+        .line2
+        {
+            margin: 279px 70%;
+        }
+        .ContInfo
+        {
+           margin-left: -12%;
+           margin-top: -16.8%;
+        }
+        .KontHead
+        {
+            margin: -279px 70%;
+        }
+        .ANP
+        {
+            margin: -219px 70%;
+        }
+      }
+  @media (min-width: 1367px) and (max-width: 1400px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -13%;
+    }
+    .line
+    {
+        margin: 145px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 20%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -219px 70%;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1366px)
+  {
+    .logotip
+    {
+        margin-left: 12%;
+    }
+    .menu
+    {
+        margin-left: 29%;
+        margin-top: -13%;
+    }
+    .line
+    {
+        margin: 145px 28.9%;
+    }
+    .header2
+    {
+        margin-top: 20%;
+    }
+    .line2
+    {
+        margin: 279px 70%;
+    }
+    .ContInfo
+    {
+       margin-left: -12%;
+    }
+    .KontHead
+    {
+        margin: -279px 70%;
+    }
+    .ANP
+    {
+        margin: -219px 70%;
+    }
+  }

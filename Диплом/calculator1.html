@@ -1,0 +1,571 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Авто Аптека онлайн калькулятор</title>
+    <link rel="shortcut icon" href="images/log.png" type="image/x-icon">
+    <link rel="stylesheet" href="calculator.css" type="text/css">
+</head>
+
+<body onload="onStartPage()" style="margin-top: 60px; overflow-x: hidden; font-family: Nfont;" class="body_hide">
+    <div style="margin: -50px 3%; font-family: Nfont;">
+        <a href="index.html" style="margin: 0 60px;">
+            <img src="images/log.png" alt="АА" class="logo">
+            <p id="logs" style="color:black; margin: -70px 180px;">
+                <b>АВТО АПТЕКА</b><br>Кузовные работы
+            </p>
+        </a>
+        <div style="margin: 0% 58%; white-space: nowrap;">
+            <img src="images/premium-icon-chat-3905874.png" width="40px">
+            <div style="margin: -47px 50px; font-size: 19px;">
+            +7 (995) 110 32 12<br>avtoapteka02@mail.ru
+        </div>
+        </div>
+        <div style="margin: 0% 78%; white-space: nowrap; font-size: 19px;">
+            <img src="images/premium-icon-alarma-clock-2278047.png" width="40px">
+            <div style="margin:-47px 50px;">
+                9:00 - 18:00<br>Понедельник - Пятница
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <header class="header">
+        <div class="FixNav">
+            <nav class="two">
+                <ul style="margin: -80px 50px; font-family: Nfont" class="menu">
+                    <li><a href="index.html" style="cursor: default; color:rgb(255, 255, 255)" class="a1">Главная</a></li>
+                    <li><a href="index.html#uslygi" style="cursor:default;color:rgb(255, 255, 255)" class="a1">Наши услуги</a>
+                        <ul class="submenu">
+                            <li><a href="rihtovka.html" style="color: rgb(255, 255, 255);">Рихтовка</a></li><br>
+                            <li><a href="pokraska.html" style="color: rgb(255, 255, 255);">Покраска</a></li><br>
+                            <li><a href="polirovka.html" style="color: rgb(255, 255, 255);">Полировка</a></li><br>
+                            <li><a href="podborAvtoemaley.html" style="color: rgb(255, 255, 255);">Подбор автоэмалей</a></li><br>
+                            <li><a href="zamenaAvtostekol.html" style="color: rgb(255, 255, 255);">Замена автостекол</a></li><br>
+                            <li><a href="remontBamperof.html" style="color: rgb(255, 255, 255);">Ремонт бамперов</a></li><br>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#my" style="cursor: default;color:rgb(255, 255, 255)" class="a1">О нас</a></li>
+                    <li><a href="contact.html" style="cursor: default;color:rgb(255, 255, 255)" class="a1">Контакты</a></li>
+                    <li><a href="calculator1.html" style="cursor: default;color:rgb(255, 255, 255)" class="a1">Калькулятор</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="conty">
+    <div class="container calc">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="calc">
+                    <div class="select">
+                    <div class="marka">
+                        <br><br><br><br><br>
+                        <label form="page-size" style="margin: 100px 0px;">Марка автомобиля</label>
+                        <br>
+                        <select id="Marks" class="form-controls" style="width: 160px; height: 25px;">
+                        <option>Марка</option>
+                    </select>
+                    </div>
+                    
+                    <div class="form-group1">
+                        <label form="cover">Модель автомобиля</label>
+                        <br>
+                        <select class="form-controls" id="models" style="width: 160px; height: 25px">
+                        <option>Модель</option>
+                    </select>
+                    </div>  
+                        <label form="detal"><p style="margin-left: 44%;">Поврежденные детали</p></label><br>
+                        </div>
+                        <div style="width: 95%; text-align: center;">
+<input type="checkbox" id="kapot" value="Капот" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="kapot" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Капот</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="krulopl" value="Переднее левое крыло" onClick="SelectPart(this.checked, this.id)" class="checkbox-input">
+<label for="krulopl" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title1">Переднее левое крыло</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="krulopp" value="Переднее правое крыло" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="krulopp" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title1">Переднее правое крыло</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="doorspl" value="Передняя левая дверь" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="doorspl" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title1">Передняя левая дверь</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="doorspp" value="Передняя правая дверь" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="doorspp" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title1">Передняя правая дверь</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="swetzad" value="Заднии фонари" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="swetzad" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Заднии фонари</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="bamperfront" value="Передний Бампер" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="bamperfront" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Передний Бампер</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="bamperback" value="Задний бампер" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="bamperback" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Задний бампер</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="doorssl" value="Задняя левая дверь" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="doorssl" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Задняя левая дверь</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="doorssp" value="Задняя правая дверь" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="doorssp" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title1">Задняя правая дверь</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="krulosl" value="Заднее левое крыло" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="krulosl" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title1">Заднее левое крыло</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="krulosp" value="Заднее правое крыло" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="krulosp" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title1">Заднее правое крыло</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="bagash" value="Крышка багажника" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="bagash" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Крышка багажника</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="lob" value="Лобовое стекло" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="lob" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Лобовое стекло</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="zadGlass" value="Заднее стекло" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="zadGlass" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Заднее стекло</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="bokGlass" value="Зеркало заднего вида" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="bokGlass" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title1">Зеркало заднего вида</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="roof" value="Крыша" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="roof" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Крыша<p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+
+<input type="checkbox" id="dfer" value="Ручка двери" onClick="SelectPart(this.checked, this.id)" class="checkbox-input"/>
+<label for="dfer" class="checkbox-label">
+  <div class="checkbox-text">
+    <p class="checkbox-text--title">Ручка двери</p>
+    <p class="checkbox-text--description">Click to <span class="un">un</span>check it!</p>
+  </div>
+</label>
+</div>
+                <div style="position: absolute; height: 0px; width: 100%;">
+                <table class="tabl">
+                    <tr>
+                      <th>Марка автомобиля</th>
+                       <th>Модель автомобиля</th>
+                       <th>Выбранные детали</th>
+                       <th>Итого</th>
+                    </tr>
+                    <tr>
+                      <td class="page-size" id="marka"></td>
+                      <td class="cover" id="Model"></td>
+                      <td style="width: 335px;"></td>
+                      <td class="sum" id="sum"></td>
+                    </tr>
+                </table>
+            </div>
+            <ul class="selDet">
+                <li><p class="endpaper" id="PartsSelected"></li>
+            </ul>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+</div>
+<br><br><br><br>
+<div id="cont1" style="margin-left: -10%;"> 
+  <div id="contact"></div>
+  <div class="logotip">
+  <img src="images/log.png" alt="АА" class="logo1">
+          <p id="logs1" style="color:rgb(255, 255, 255);">
+              <b>АВТО АПТЕКА</b><br>Кузовные работы
+          </p>
+          <div style="width: 500px;">
+          <p style="margin-top: 230px; margin-left: 100px; color: rgb(216, 215, 215); font-size: 125%; text-align: justify;">Мы знаем, что честность и прозрачность в сочетании с надежным и дружелюбным обслуживанием клиентов - это то, что действительно укрепляет доверие клиентов.</p>
+          </div>
+  </div>
+  <div class="menu">
+      <p style="font-size: 25px; margin-left: 533px; margin: -12.5% 28.9%;">Меню</p>
+      <hr class="line">
+  <div class="header2">
+      <ul style="margin: -184px 26.8%; line-height: 35px; font-size: 130%; list-style: square;">
+          <li><a href="index.html" style="color:rgb(216, 215, 215)">Главная</a></li>
+          <li><a href="#uslygi" style="color:rgb(216, 215, 215)">Наши услуги</a></li>
+          <li><a href="#my" style="color:rgb(216, 215, 215)">О нас</a></li>
+          <li><a href="contact.html" style="color:rgb(216, 215, 215)">Контакты</a></li>
+          <li><a href="calculator1.html" style="color:rgb(216, 215, 215)">Калькулятор</a></li>
+      </ul>
+  </div>
+  </div>
+  <div class="ContInfo">
+      <p class="KontHead">Контактная информация</p>
+      <hr class="line2">
+  <div class="ANP">
+      <p>Адрес: <span class="con">Г.Краснодар, х.Ленина, МТФ-1</span></p>
+      <p>Номер: <span class="con">7(995) 110 32 12</span></p>
+      <p>E-mail: <span class="con"><a href="mailto:avtoapteka02@mail.ru" class="con">avtoapteka02@gmail.com</a></span></p>
+  </div>
+</div>
+<div id='follow'>
+    <a href='https://wa.me/79951103212' target='_blank' style="color: white;"><p style="margin: -15px 0;">
+    <img src='images/799d7b286162a2ef9c4265b0c3195d4f.png' width="30px" style="margin: 20px 15px;"><p style="margin: -50px 50px; white-space: nowrap; font-size: 15px;">Быстрая оценка по WhatsApp</p></p></a>
+</div>
+<div>
+    <a class="back_to_top" title="Наверх"><img src="images/premium-icon-up-arrow-5817906.png" width="40px"></a>
+</div>
+
+    <script>
+        
+        var AllPrice = 0;
+        var selectedParts = [];
+        function trackScroll() {
+    var scrolled = window.pageYOffset;
+    var coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
+      goTopBtn.classList.add('back_to_top-show');
+    }
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('back_to_top-show');
+    }
+  }
+
+  function backToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollBy(0, -30);
+      setTimeout(backToTop, 0);
+    }
+  }
+
+  var goTopBtn = document.querySelector('.back_to_top');
+        (function() {
+  window.addEventListener('scroll', trackScroll);
+  goTopBtn.addEventListener('click', backToTop);
+})();
+
+        function getSelected(selector) {
+            var a = selector.options[selector.selectedIndex].text;
+            return a;
+        }
+
+
+        function findByValue(array, string) {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] == string) {
+                    result = i;
+                    break;
+                }
+            }
+            return result;
+        }
+
+        function SelectPart(checked, part) {
+            if (checked == true) {
+                selectedParts[selectedParts.length] = part;
+                document.getElementById("PartsSelected").innerHTML = ""
+                for (var i = 0; i < selectedParts.length; i++) {
+                    document.getElementById("PartsSelected").innerHTML += "<br>" + document.getElementById(selectedParts[i]).value
+                }
+            } else {
+                selectedParts.splice(findByValue(selectedParts, part), 1);
+                document.getElementById("PartsSelected").innerHTML = ""
+                for (var i = 0; i < selectedParts.length; i++) {
+                    document.getElementById("PartsSelected").innerHTML += "<br>" + document.getElementById(selectedParts[i]).value
+                    recalc();
+                }
+            }
+            recalc();
+        }
+
+
+        function onStartPage() {
+            for (key in cars) {
+                let newOption = new Option(key, key);
+                document.getElementById("Marks").append(newOption)
+            }
+
+            document.getElementById("Marks").onchange = (function() {
+                document.getElementById("Model").innerHTML;
+                changeModels(getSelected(this));
+            });
+
+
+        }
+
+
+        function changeModels(selected) {
+            document.getElementById("models").innerHTML = "";
+            let newOption = new Option("Модель", "default");
+            document.getElementById("models").append(newOption);
+            for (var i = 0; i < cars[selected].models.length; i++) {
+                let newOption = new Option(cars[selected].models[i], cars[selected].models[i]);
+                document.getElementById("models").append(newOption)
+            }
+            document.getElementById("models").onchange = (function() {
+                recalc();
+            });
+        }
+
+
+        function recalc() {
+            if (getSelected(document.getElementById("Marks")) == "Марка" || getSelected(document.getElementById("models")) == "Модель") {} else {
+                var AddtionalPrice = cars[getSelected(document.getElementById("Marks"))].Prices[document.getElementById("models").selectedIndex - 1];
+                var MainPrice = 0;
+                for (var i = 0; i < selectedParts.length; i++) {
+                    MainPrice = MainPrice + parts[selectedParts[i]];
+                    AllPrice = MainPrice + AddtionalPrice
+                document.getElementById("sum").innerHTML = AllPrice + " руб."
+                }
+                changeTable();
+            }
+        }
+
+        
+
+        function changeTable() {
+            document.getElementById("Model").innerText = getSelected(document.getElementById("models"));
+            document.getElementById("marka").innerText = getSelected(document.getElementById("Marks"));
+        }
+        var cars = {
+            Acura: {
+                models: ["CDX", "NSX", "MDX", "TLX"],
+                Prices: [15000, 40000, 14000, 15000],
+                Country: "Япония"
+            },
+            Audi: {
+                models: ["A1", "A3", "A4", "A5", "A6", "A7", "A8", "Q2", "Q3", "Q5", "Q7", "Q8", "R8", "RS Q3", "RS Q8", "RS3", "RS4", "RS5", "RS6", "S3", "S4", "S5", "S6", "S7", "S8", "TT"],
+                Prices: [20000, 21000, 19000, 20000, 25000, 25000, 23000, 22000, 25000, 26000, 30000, 35000, 38000, 26000, 33000, 31000, 32000, 31000, 37000, 19000, 21000, 23000, 22000, 32000, 38000, ],
+                Country: "Германия",
+            },
+            BMW: {
+                models: ["I3", "I8", "IX", "M1", "M2", "M3", "M4", "M5", "M6", "M8", "X1", "X2", "X3", "X4", "X5", "X6", "X7", "Z4"],
+                Prices: [18000, 35000, 32000, 15000, 39000, 28000, 28000, 33000, 27000, 31000, 28000, 14000, 17000, 19000, 24000, 26000, 38000, 39000],
+                Country: "Германия",
+            },
+            BYD: {
+              models: ["E6", "S6", "F7", "F5", "F3", "F0"],
+              Prices: [10000, 12000, 13000, 12000, 11000, 10000],
+              Country :"Китай",
+            },
+            Chevrolet: {
+                models: ["Aveo", "Blazer", "Camaro", "Captiva", "Cobalt", "Corvette", "Cruze", "Impala", "Lacetti", "Lanos", "Niva", "Spark", "Tahoe"],
+                Prices: [9000, 12000, 21000, 19000, 9000, 27000, 13000, 14000, 11000, 12000, 8000, 7000, 18000],
+                Country: "Америка",
+            },
+            Chery: {
+              models: ["Amulet", "Arrizo", "Fora", "Tiggo", "Tiggo 2", "Tiggo 3", "Tiggo 4", "Tiggo 5", "Tiggo 7", "Tiggo 8"],
+              Prices: [11000, 13000, 12000, 10000, 11000, 13000, 15000, 15000, 16000, 17000],
+              Country: "Китай",
+            },
+            Citroen: {
+                models: ["Berlingo", "C1", "C2", "C3", "C4", "C5", "C5 X", "C6", "C8"],
+                Prices: [15000, 7000, 8000, 10000, 16000, 10000, 15000, 21000, 12000],
+                Country: "Франция",
+            },
+            Daewoo: {
+                models: ["GENTRA", "MAGNUS", "MATIZ", "NEXIA",],
+                Prices: [9000, 8000, 6000, 11000],
+                Country: "Корея",
+            },
+            Ford: {
+              models: ["Escape", "Escort", "Explorer", "F-150", "Fiesta", "Focus", "Fusion", "Kuga", "Mondeo", "Mustang"],
+              Prices: [9000, 9000, 13000, 16000, 14000, 13000, 16000, 14000, 16000, 18000, ],
+              Country: "Китай",
+            },
+            Geely: {
+              models: ["Atlas", "Coolray", "Emgrand", "GC6", "GX7", "MK", "SC11"],
+              Prices: [12000, 13000, 11000, 12000, 12000, 10000, 16000],
+              Country: "Китай",
+            },
+            Honda: {
+              models: ["Accord", "Civic", "CR-V", "Legend", "Pilot"],
+              Prices: [15000, 17000, 14000, 12000, 19000],
+              Country: "Япония",
+            },
+            Hyundai: {
+              models: ["Accent", "Creta", "Elantra", "Getz", "Santa Fe", "Sonata", "Solaris", "Tucson"],
+              Prices: [11000, 22000, 23000, 10000, 20000, 14000, 16000, 24000],
+              Country: "Корея",
+            },
+            Infinity: {
+              models: ["FX", "Q30", "Q50", "Q60", "Q70"],
+              Prices: [16000, 15000, 17000, 19000, 22000  ],
+              Country: "Япония",
+            },
+            Kia: {
+              models: ["Ceed", "Cerato", "K5", "Optima", "Picanto", "Rio", "Sorento", "Soul", "Spectra", "Sportage", "Stinger"],
+              Prices: [16000, 24000, 26000, 25000, 12000, 16000, 23000, 21000, 14000, 22000, 28000],
+              Country: "Корея",
+            },
+            Lada: {
+              models: ["2104", "2107", "2110", "Granta", "Kalina", "Largus", "Priora", "Samara", "Vesta", "XRay"],
+              Prices: [8000, 9000, 11000, 15000, 15000, 14000, 14000, 13000, 19000, 20000, ],
+              Country: "Россия",
+            },
+            LIFAN: {
+              models: ["820", "Breez", "Cebrium", "Celliya", "Myway", "Smily", "Solano", "X50", "X60", "X70"],
+              Prices: [13000, 12000, 14000, 15000, 17000, 14000, 14000, 16000, 16000, 19000],
+              Country: "Китай",
+            },
+            Mazda: {
+              models: ["Mazda 2", "Mazda 3", "Mazda 6", "Axela", "CX-3", "CX-30", "CX-4", "CX-5", "CX-7", "CX-9", "MX-5", "RX-8"],
+              Prices: [14000, 17000, 23000, 19000, 18000, 19000, 20000, 21000, 26000, 29000, 24000, 23000],
+              Country: "Япония",
+            },
+            Mercedes_Benz: {
+              models: ["A-Class", "B-Class", "C-Class", "CLA", "G-Class", "Vito"],
+              Prices: [25000, 29000, 28000, 30000, 35000, 32000],
+              Country: "Германия",
+            },
+            Mitsubishi: {
+              models: ["Eclipse", "Galant", "Lancer", "Outlander", "Pajero"],
+              Prices: [ 11000, 14000, 19000, 23000, 24000],
+              Country: "Япония",
+            },
+            Nissan: {	
+              models: ["350Z", "370Z", "Almera", "Juke", "Primari", "Qashqai", "Sentra", "Teana", "Tiida", "XTrail"],
+              Prices: [19000, 18000, 16000, 18000, 23000, 20000, 23000, 24000, 23000, 25000],
+              Country: "Япония",
+          },
+           Opel: {
+              models: ["Astra", "Corsa", "Insignia","Omega", "Vectra", "Zafira"],
+              Prices: [18000, 59000, 24000, 21000, 2000, 24000],
+              Country: "Германия",
+          },
+            Peugeot: {
+               models: ["2008", "206", "207", "208", "3008", "307", "308", "406", "407"],
+               Prices: [24000, 22000, 12000, 16000, 18000, 17000, 22000, 19000, 21080],
+              Country: "Франция",
+            },
+              Renault: {
+              models: ["Arkana", "Clio", "Duster", "Fluence", "Kaptur", "Logan", "Megane", "Sandero", "Scenic", "Symbol"],
+              Pricec: [19000, 21000, 18000, 24000, 21000, 17000, 22000, 21000, 23000, 19000],
+               Country: "Франция",
+               },
+            Skoda: {
+             models: ["Fabia", "Kamiq", "Karoq", "Kodiaq", "Octavia", "Rapid", "Suberb", "Yeti"],
+             Prices: [21000, 26000, 25000, 28000, 20000, 25000, 27000, 26000],
+              Country: "Чехия",
+              },
+            Subaru: {
+             models: ["BRZ", "Forester", "Impreza", "Legacy", "Outback", "WRX"],
+              Prices: [29000, 27000, 28002, 27000, 28000, 32000],
+             Country:  "Япония",
+            },
+             Toyota: {
+              models: ["Alphard", "Auris", "Avensis", "Camry", "Celica", "Corolla", "Crown", "Land Cruiser", "RAV4", "Supra"],
+              Prices: [29000, 21000, 19000, 23000, 20000, 26000, 27000, 30000, 28000, 26000],
+               Country: "Япония",
+            },
+            Volkswagen: {
+              models: ["Amarok", "Arteon", "Golf", "Jetta", "Passat", "Polo", "Scirocco", "Tiguan", "Touareg"],
+              Prices: [21000, 33000, 22000, 24000, 25000, 24000, 26000, 27000, 27000],
+              Country: "Германия"
+           },
+              Volvo: {
+               models: ["C30", "C70", "S40", "S60", "S80", "S90", "XC40", "XC60", "XC70 ", "XC90"],
+              Prices: [19000, 21000, 20000, 26000, 28000, 31000, 26000, 27000, 28000, 30000],
+              Country: "Швеция"
+           }
+          }
+
+
+        var parts = {
+            kapot: 15000,
+            krulopl: 9000,
+            krulopp: 9000,
+            doorspl: 10000,
+            doorspp: 10000,
+           bamperfront: 6000,
+          bamperback: 6000,
+           doorssl: 10000,
+           doorssp: 10000,
+           krulosl: 9000,
+           krulosp: 9000,
+            bagash: 3000,
+           lob: 12000,
+           zadGlass: 10000,
+            bokGlass: 1000,
+            roof: 17000,
+          dfer: 2500,
+            swetzad: 5000,
+            }
+    </script>
+</body>
+
+</html>
